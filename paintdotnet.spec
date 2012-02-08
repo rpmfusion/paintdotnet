@@ -1,6 +1,6 @@
 Name:           paintdotnet
 Version:        0.1.63
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        A mono port of the Paint.NET image editor
 
 # Mono is unavailable on ppc64 prior to Fedora 11
@@ -123,6 +123,9 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 %{_libdir}/pkgconfig/paintdotnet/
 
 %changelog
+* Thu Feb 09 2012 Nicolas Chauvet <kwizart@gmail.com> - 0.1.63-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
 * Wed Jun 17 2009 - Eric Moret <eric.moret@gmail.com> - 0.1.63-5
 - _libdir/pkgconfig/paintdotnet/ now owned by paintdotnet
 
